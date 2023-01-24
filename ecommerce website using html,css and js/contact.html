@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="images/superkart2.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* wild card css or universal css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .cards-container {
+            width: 100%;
+            height: 600px;
+            /*viewport height*/
+            background-image: url('images/back.png');
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .cards-container .card-1 {
+            width: 30%;
+            height: 500px;
+            max-width: 300px;
+            color: #fff;
+            text-align: center;
+            padding-top: 20px;
+            border: 1px solid rgb(255, 255, 255, 0.3);
+            background: rgb(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgb(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            /*This will blur the backdround of the card*/
+            animation: rotate 2s infinite;
+            
+        }
+
+        .cards-container .card-1:hover{
+            animation: none;
+        }
+
+        @keyframes rotate {
+            from {transform: rotateY(180deg);}
+            
+        }
+
+        /* .card-1 h2{
+            color: coral;
+        } */
+        .cards-container img {
+            width: 140px;
+            border-radius: 50%;
+        }
+
+        .cards-container h2 {
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        .cards-container p {
+            font-size: 18px;
+            margin: 10px auto;
+            max-width: 330px;
+        }
+
+        .cards-container .btn {
+            text-decoration: none;
+            background-color: #fff;
+            color: #ff01cf;
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 10px 30px;
+            border-radius: 30px;
+            margin: 20px 10px;
+        }
+        .cards-container .btn:hover{
+            color: #fff;
+            background-color: #ff01cf;
+            transition: 0.5ms;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo" data-tilt>
+            <img src="images/superkart2.png" alt="logo image" style="position: relative; top: 30px;">
+            <h3 style="position: relative; top: -30px; left: 50px;">Superkart</h3>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="products.html" target="_blank">Products</a></li>
+                <li><a href="" target="_blank">About</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="login.html" target="_blank">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html" target="_blank" rel="noopener noreferrer"><img src="images/cart.png" alt="" width="35px" height="35px"></a>
+        <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="cards-container">
+
+        <div class="card-1" data-tilt>
+            <img src="images/deepak.jpg" alt="deepak">
+            <h2>DEEPAK GANGWANI</h2>
+            <p>The creator of superkart.com and the team leader who created the home,products and contact page in the website.</p>
+            <a href="https://deepak-gangwani.github.io/deepak-gangwani-portfolio-website/" class="btn" target="_blank" rel="noopener noreferrer">PORTFOLIO WEBSITE</a>
+        </div>
+        <div class="card-1" data-tilt>
+            <img src="images/jp.jpeg" alt="jp image" height="190px">
+            <h2>JAI PRAKASH</h2>
+            <p>The Founder Of superkart.com and the team supporter who created the add to cart page in the website</p>
+            <a href="https://vjai2324.github.io/prot.-github.io/" class="btn" target="_blank" rel="noopener noreferrer">PORTFOLIO WEBSITE</a>
+        </div>
+        <div class="card-1" data-tilt>
+            <img src="images/pukhraj.jpeg" alt="pukhraj image">
+            <h2>PUKHRAJ SUTHAR</h2>
+            <p>The Co-Founder Of superkart.com and the team supporter who created the contact page in the website</p>
+            <a href="https://iampukhraj.github.io/portfollio.github.io/" class="btn" target="_blank" rel="noopener noreferrer">PORTFOLIO WEBSITE</a>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h2>Dowload our App</h2>
+                    <p>Dowload App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="" data-tilt>
+                        <img src="images/app-store.png" alt="" data-tilt>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="logo" data-tilt>
+                        <img src="images/superkart2.png" alt="logo image" style="position: relative; top: 30px;">
+                        <h3 style="position: relative; top: -30px; left: -12px;">Superkart</h3>
+                    </div>
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of your look Accessible to the Many.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h2>Follow us</h2>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-bottom: 1px solid #b5b5b5; height: 1px; margin: 20px 0;"></div>
+            <p style="text-align: center;"> &copy Copyright 2023-Superkart.com</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    
+</body>
+
+</html>

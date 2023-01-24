@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    animation: fadeIn 2s infinite;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0.2;
+      color: #fff;
+    }
+    to {
+      opacity: 1;
+      color: #3bff89;
+    }
+  }
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    background: linear-gradient(90deg, rgb(121, 9, 116) 7%, rgb(242, 0, 255) 100%);
+    /* position: fixed; */
+    /* border: 3px solid white; */
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:hover{
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 10%;
+    padding: 15px;
+    transition: 0.5ms;
+    background: rgb(255, 255, 255, 0.3);
+}
+
+a{
+    text-decoration: none;
+    color: #3bff89;
+    font-weight: 900;
+}
+
+p{
+    color: #563434;
+    font-weight: 900;
+}
+
+.container{
+    max-height: 1300px;
+    margin: auto;
+    padding: auto;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 20px;
+}
+
+.col-2{
+    flex-basis: 50%;   /*This property will helps the column to occupy 50% space*/
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    animation: moving 2s infinite;
+}
+
+.col-2 img:hover{
+    animation: none;
+}
+
+@keyframes moving {
+    from {transform: translateY(50px);}
+    to {transform: translateY(-50px);}    
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background: #563434;
+}
+
+.header{
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background: rgb(252,128,70);
+    background: linear-gradient(90deg, rgba(252,128,70,1) 0%, rgba(70,162,252,1) 100%);
+    animation: fadeIn2 2s infinite;
+}
+
+@keyframes fadeIn2 {
+    from {background: rgb(63,133,251);
+        background: linear-gradient(90deg, rgba(63,133,251,1) 0%, rgba(252,128,70,1) 100%);}
+    
+}
+
+/* featured categories part css code */
+.categories{
+    margin: 70px 0px;
+    /* border: 1px solid black; */
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    animation: rotate 3s infinite;
+}
+
+.col-3:hover{
+    animation: none;
+
+}
+
+@keyframes rotate {
+    from {transform: rotateY(180deg);}
+    to {transform: rotateY(-180deg);}
+    
+}
+.col-3 img{
+    width: 70%;
+}
+
+.small-container{
+    /* border: 1px solid red; */
+    max-width: 1080px;  /*creating a box width 80% using pixels if we remove this the box box will take full screen width*/
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* featured products part css */
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform(0.5s);  /*calling transform function from hover and creating duration to hover*/
+    /* border: 1px solid #3bff89; */
+}
+.col-4:hover{
+    transform: translateY(-10px);  /*This will hover the product image in upward direction by 10px*/
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+
+.rating i{
+    color: #ff523b;
+}
+
+/* --------offer css-------- */
+.offer{
+    background: linear-gradient(90deg, rgba(9,71,121,1) 7%, rgba(0,212,255,1) 100%);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img{
+    padding: 50px;
+}
+
+small{
+    color: #555;
+}
+
+/* ----------testimonial------------ */
+
+.testimonial{
+    padding-top: 100px;
+    /* border: 1px solid black; */
+}
+
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+
+}
+
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+
+}
+
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+/* ---------------brands----------- */
+.brands{
+    margin: 100px auto;
+    /* border: 5px solid black; */
+}
+
+.col-5{
+    width: 160px;
+}
+
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+/* ---------------footer----------- */
+
+.footer{
+    background: linear-gradient(90deg, rgba(9,71,121,1) 7%, rgba(0,212,255,1) 100%);
+    color: black;
+    font-size: 14px;
+    padding: 60px 20px;
+    animation: fadeIn2 2s infinite;
+}
+
+
+
+.footer p{
+    color: black;
+}
+
+.footer h2{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+/* .footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+} */
+
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-col-3 ul li:hover{
+    color: #3bff89;
+    transition: 0.5ms;
+}
+
+.footer-col-4 ul li:hover{
+    color: #3bff89;
+    transition: 0.5;
+}
+
+ul{
+    list-style: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* ----------------all products page css--------------- */
+.sort-list{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+
+select:focus{
+    outline: none;   /* If we slect any option the border color will remain orange it will not change into black*/
+}
+
+.page-btn{
+    margin: 0 auto 80px;
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background: #ff523b;
+    color: white;
+}
+
+
+
+/* -------------Single product details css------------ */
+.single-product{
+    margin-top: 50px;
+}
+
+.single-product .col-2 img{
+    width: 400px;
+    padding: 0;
+    animation: none;
+}
+
+/* .single-product .col-2{
+    padding: 0px;
+} */
+
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+
+.single-product input:focus{
+    outline: none;
+}
+
+.single-product .fa{
+    color: #ff523b;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.small-img-row{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+
+
+
+/*----------media queries for menu---------------- */
+@media only screen and (max-width: 840px){
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background: #333;
+        width: 100%;
+    
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }   
+}
+
+/*--------- media query for less than screen size------------- */
+@media only screen and (max-width:600px){
+
+    .row{
+        text-align: center;
+    }
+
+    .col-2,.col-3,.col-4{
+        flex-basis: 100%;
+    }
+
+    .single-product .row{
+        text-align: left;
+    }
+
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    
+}
+
+
