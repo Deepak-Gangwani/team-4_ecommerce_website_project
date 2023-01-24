@@ -1,0 +1,127 @@
+body {
+  background: linear-gradient(#e66465, #9198e5);
+  font-family: "Roboto", sans-serif;
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+
+}
+
+
+
+@keyframes colormove {
+  from {
+    background: linear-gradient(#9198e5, #e66465);
+  }
+
+}
+
+.signup-box {
+  width: 360px;
+  height: 620px;
+  margin: auto;
+  background-color: rgb(255, 255, 255, 0.2);
+  border: 3px solid rgb(255, 255, 255, 0.3);
+  border-radius: 10%;
+  box-shadow: 0px 0px 10px 0px;
+  position: relative;
+  margin-top: 100px;
+  animation: move 2s infinite;
+}
+
+@keyframes move {
+  from {
+    right: 10px;
+  }
+
+  to {
+    left: 10px;
+  }
+
+}
+
+.signup-box:hover {
+
+  background-color: white;
+  animation: none;
+}
+
+.login-box {
+  width: 360px;
+  height: 280px;
+  margin: auto;
+  background-color: rgb(255, 255, 255, 0.2);
+  border: 3px solid rgb(255, 255, 255, 0.3);
+  border-radius: 10%;
+  box-shadow: 0px 0px 10px 0px;
+  margin-top: 100px;
+  position: relative;
+  animation: move 2s infinite;
+}
+
+.login-box:hover {
+
+  background-color: white;
+  animation: none;
+}
+
+
+h1 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+h4 {
+  text-align: center;
+}
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+
+.button {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: #49c1a2;
+  color: white;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #7a92be;
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.para-2 {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+
+}
+
+.para-2 a {
+  color: #49c1a2;
+}
